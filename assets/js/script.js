@@ -2,8 +2,6 @@
 const iconMenu = document.querySelector('.burger__logo');
 const menuBody = document.querySelector('.navigate');
 const header = document.querySelector('.header');
-const contentBlock = document.querySelector('.photodiary__container_sidebar');
-const sidebar = document.querySelector('.sitebar__container');
 
 // CONSTANTS
 const scrollTrigger = 60
@@ -55,7 +53,3 @@ window.onscroll = function() {
     header.classList.remove('_sticky');
   }
 };
-
-// STIKY SITEBAR 
-console.log(contentBlock.scrollHeight)
-console.log(sidebar.clientHeight)
