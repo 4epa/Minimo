@@ -173,7 +173,8 @@ h6 {
   align-items: center;
   padding: 15px 15px 15px 15px;
 }
-.header__logo {
+.header__logo a {
+  color: #626262;
   font-size: 1.875rem;
   font-family: "Inconsolata";
 }
@@ -296,6 +297,10 @@ h6 {
 }
 .about__links a {
   color: #b4ad9e;
+  transition: all 0.2s ease 0s;
+}
+.about__links a:hover {
+  opacity: 0.6;
 }
 .sidebar__top-post {
 }
@@ -321,7 +326,7 @@ h6 {
 .top-post__link:hover {
   text-decoration: underline;
 }
-.top-post__coments {
+.top-post__comments {
   font-family: "Ubuntu";
   text-transform: uppercase;
 }
@@ -584,54 +589,54 @@ h6 {
   background-color: #b4ad9e;
 }
 /*___________RECOMENDATION__________*/
-.recomendation {
+.recommendation {
   background-color: #f0f0f0;
 }
-.recomendation__container {
+.recommendation__container {
   max-width: 58.125rem;
   padding: 70px 15px;
 }
-.recomendation__title {
+.recommendation__title {
   margin-bottom: 50px;
 }
-.recomendation__row {
+.recommendation__row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
-.card-recomendation {
+.card-recommendation {
   color: #626262;
   transition: all 0.2s ease 0s;
 }
-.card-recomendation > *:not(:last-child) {
+.card-recommendation > *:not(:last-child) {
   margin-bottom: 25px;
 }
-.card-recomendation:hover {
+.card-recommendation:hover {
   transform: translateY(-5px);
   text-decoration: underline;
 }
-.card-recomendation__img {
+.card-recommendation__img {
   position: relative;
   width: 100%;
   padding-bottom: 65%;
 }
-.card-recomendation__title {
+.card-recommendation__title {
   font-size: 1.25rem;
   color: #626262;
 }
 @media (max-width: 650px) {
-  .card-recomendation__title {
+  .card-recommendation__title {
     font-size: 1rem;
   }
 }
 @media (max-width: 550px) {
-  .recomendation__row {
+  .recommendation__row {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px;
   }
-  .card-recomendation > *:not(:last-child) {
+  .card-recommendation > *:not(:last-child) {
     margin-bottom: 15px;
   }
 }
@@ -725,6 +730,10 @@ h6 {
 }
 .connect-with__link {
   color: #626262;
+  transition: all 0.2s ease 0s;
+}
+.connect-with__link:hover {
+  opacity: 0.6;
 }
 .connect-with__link_grey {
   color: #c8c8c8;
@@ -800,10 +809,21 @@ h6 {
 }
 .privacy-block__link {
   color: #626262;
+  transition: all 0.2s ease 0s;
 }
 .social-links__container {
   display: flex;
   gap: 20px;
+}
+.social-links__link {
+  color: #626262;
+  transition: all 0.2s ease 0s;
+}
+.social-links__link:hover {
+  opacity: 0.6;
+}
+.privacy-block__link:hover {
+  opacity: 0.6;
 }
 @media (max-width: 450px) {
   .footer__container {
@@ -837,7 +857,7 @@ h6 {
   position: absolute;
   top: 50%;
   margin: -30px 0px 0px 0px;
-  z-index: 10;
+  z-index: 5;
   opacity: 0;
   font-size: 0;
   border: solid rgb(0, 0, 0);
