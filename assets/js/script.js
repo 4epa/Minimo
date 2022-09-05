@@ -53,3 +53,30 @@ window.onscroll = function() {
     header.classList.remove('_sticky');
   }
 };
+
+// SLIDER
+$(document).ready(function () {
+  $(".slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 770,
+        settings: {
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          arrows: false,
+          dots: false,
+        },
+      },
+    ],
+  });
+});
